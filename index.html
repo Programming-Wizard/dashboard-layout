@@ -4,57 +4,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dashboard</title>
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/jellee-typeface"
+      type="text/css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="nav">
-      <button class="menu_icon">
+      <button class="menu_icon" id="menu-button">
         <span></span>
         <span class="mid-line"></span>
         <span></span>
       </button>
       <h3>Dashboard</h3>
     </div>
-    <div class="side-menu">
-      <img src="resources/home.svg" alt="home icon" id="home" />
-      <label for="home">HOME</label>
-      <img src="resources/profile.svg" alt="home icon" id="home" />
-      <label for="home">PROFILE</label>
-      <img src="resources/comment.svg" alt="home icon" id="home" />
-      <label for="home">MESSAGES</label>
-      <img src="resources/history.svg" alt="home icon" id="home" />
-      <label for="home">HISTORY</label>
-      <img src="resources/settings.svg" alt="home icon" id="home" />
-      <label for="home">SETTINGS</label>
-    </div>
-    <div class="main-body">
-      <div class="top">
-        <img src="resources/search.svg" alt="search" height="25px" width="*" />
-        <input type="text" name="search" id="search-field" />
-        <img src="resources/alert.svg" alt="alert" height="25px" width="*" />
-        <img
-          src="resources/profile-icon.svg"
-          alt="profile"
-          height="25px"
-          width="*"
-        /><br />
-        <img
-          src="resources/profile-icon.svg"
-          alt="profile"
-          height="25px"
-          width="*"
-        />
-        <span><b>Hi there,</b></span>
-        <p>User user</p>
-        <button>New</button>
-        <button>upload</button>
-        <button>share</button>
+    <div class="main-parent-container">
+      <div class="side-menu" id="side-menu">
+        <img src="resources/home.svg" alt="home icon" id="home" />
+        <label for="home">HOME</label>
+        <img src="resources/profile.svg" alt="home icon" id="home" />
+        <label for="home">PROFILE</label>
+        <img src="resources/comment.svg" alt="home icon" id="home" />
+        <label for="home">MESSAGES</label>
+        <img src="resources/history.svg" alt="home icon" id="home" />
+        <label for="home">HISTORY</label>
+        <img src="resources/settings.svg" alt="home icon" id="home" />
+        <label for="home">SETTINGS</label>
       </div>
-      <div class="container-for-main-content">
-        <div class="your-projects-section"></div>
-        <div class="container-for-side-section">
-          <div class="announcement-section"></div>
-          <div class="trending-section"></div>
+      <div class="main-body">
+        <div class="top">
+          <div class="upper-top">
+            <div>
+              <img
+                src="resources/search.svg"
+                alt="search"
+                height="25px"
+                width="*"
+              />
+              <input
+                type="text"
+                name="search"
+                id="search-field"
+                placeholder="Search"
+              />
+            </div>
+            <img
+              src="resources/alert.svg"
+              alt="alert"
+              height="25px"
+              width="*"
+              id="alerticon"
+            />
+            <img
+              src="resources/profile-icon.svg"
+              alt="profile"
+              height="25px"
+              width="*"
+              id="profile"
+            />
+          </div>
+          <div class="lower-top">
+            <div>
+              <img
+                src="resources/profile-icon.svg"
+                alt="profile"
+                height="25px"
+                width="*"
+              />
+              <p><b>Hi there,</b> <br />Varun Visave.</p>
+            </div>
+            <button>New</button>
+            <button>upload</button>
+            <button>share</button>
+          </div>
+        </div>
+        <div class="container-for-main-content">
+          <div class="your-projects-section">
+            <h4>Your Projects</h4>
+            <div class="wrapper-class-for-cards">
+              <div class="card">
+                <h3>Project Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+              </div>
+              <div class="card">
+                <h3>Project Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+              </div>
+              <div class="card">
+                <h3>Project Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+              </div>
+              <div class="card">
+                <h3>Project Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+              </div>
+              <div class="card">
+                <h3>Project Title</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-for-side-section">
+            <div class="announcement-section">
+              <h4>Announcements</h4>
+              <div class="card">
+                <h3>Site Maintainance</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+                <hr />
+                <h3>Community Share Day</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+                <hr />
+                <h3>Updated Share Day</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, alias voluptate veritatis est odio enim
+                </p>
+              </div>
+            </div>
+            <div class="trending-section">
+              <h4>Trending</h4>
+              <div class="card">
+                <div class="trend">
+                  <img
+                    src="resources/cat.png"
+                    alt="cat-user-image"
+                    height="30px"
+                    width="30px"
+                  />
+                  <h5>
+                    @A_cute_cat
+                    <p>Meow meow meow... MEOW!</p>
+                  </h5>
+                </div>
+                <div class="trend">
+                  <img
+                    src="resources/profile-icon.svg"
+                    alt="cat-user-image"
+                    height="30px"
+                    width="30px"
+                  />
+                  <h5>
+                    @specialBeamCannon852
+                    <p>
+                      Help I cant feel my legs, what do you mean those are my
+                      arms
+                    </p>
+                  </h5>
+                </div>
+                <div class="trend">
+                  <img
+                    src="resources/user.png"
+                    alt="cat-user-image"
+                    height="30px"
+                    width="30px"
+                  />
+                  <h5>
+                    @User_123fdd8520
+                    <p>Earth is not flat its cylindrical!</p>
+                  </h5>
+                </div>
+                <div class="trend">
+                  <img
+                    src="resources/avatar.svg"
+                    alt="cat-user-image"
+                    height="30px"
+                    width="30px"
+                  />
+                  <h5>
+                    @IamFlash_02
+                    <p>pew pew pew... pipipPeew</p>
+                  </h5>
+                </div>
+                <div class="trend">
+                  <img
+                    src="resources/gamer.png"
+                    alt="cat-user-image"
+                    height="30px"
+                    width="30px"
+                  />
+                  <h5>
+                    @CasualGamerGUy
+                    <p>On a mission : Touch Grass!</p>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
