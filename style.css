@@ -75,7 +75,7 @@ html body {
   background-color: rgba(189, 183, 107, 0.516);
   width: 7%;
 }
-/* .side-menu img:hover {
+.side-menu img:hover {
   user-select: none;
   display: block;
   margin-left: auto;
@@ -85,7 +85,7 @@ html body {
   background-color: rgba(189, 183, 107, 0.516);
   width: 50%;
   transform: scale(1.05);
-} */
+}
 .side-menu > label {
   color: black;
   font-size: 14px;
@@ -167,6 +167,10 @@ html body {
   border-style: solid;
   border-color: skyblue;
 }
+.lower-top button:hover
+{
+  transform: scale(1.1)
+}
 .lower-top > div > img {
   margin-left: 1em;
   margin-right: 1em;
@@ -232,6 +236,9 @@ html body {
   padding: 10px;
   margin: 10px 0;
   box-shadow: -2px 8px 8px rgba(0, 0, 0, 0.2);
+}
+.your-projects-section .card:hover{
+  transform: scale(1.1);
 }
 .container-for-side-section {
   display: flex;
@@ -320,7 +327,7 @@ html body {
     font-size: 10px;
   }
   .side-menu img {
-    width: max-content;
+    width: 2em;
   }
   .main-parent-container {
     flex-direction: row;
@@ -330,6 +337,9 @@ html body {
   .container-for-main-content {
     flex-direction: row;
     align-items: self-start;
+  }
+  .side-menu{
+    background-color: skyblue;
   }
   .your-projects-section {
     width: 99%;
@@ -347,3 +357,4 @@ html body {
     height: 100%;
   }
 }
+
